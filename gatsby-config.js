@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/src/testmdx`,
+        path: `${__dirname}/src/next`,
       },
     },
 
@@ -59,7 +59,7 @@ module.exports = {
         extensions: [".mdx", ".md"],
         //
         defaultLayouts: {
-          default: path.resolve("./src/templates/test.template.tsx"),
+          default: path.resolve("./src/templates/next.template.tsx"),
         },
         //
         gatsbyRemarkPlugins: [
