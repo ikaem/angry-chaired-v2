@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import useSiteMetadata from "../hooks/use-site-metadata";
 
-const Header = () => {
+const Header: React.FC = () => {
 
   const { title } = useSiteMetadata();
 

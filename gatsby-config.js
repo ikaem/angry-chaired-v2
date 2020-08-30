@@ -1,3 +1,5 @@
+const path = require("path")
+
 const siteMetadata = {
   title: "Angry Chaired",
   description: "Project portfolio of an aspiring web developer",
@@ -32,18 +34,34 @@ module.exports = {
         path: `${__dirname}/src/current-project`,
       },
     },
+    //
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: "gatsby-source-filesystem",
       options: {
-        rule: {
-          include: /assets/,
-        },
+        name: "testmdx",
+        path: `${__dirname}/src/testmdx`,
       },
     },
+    //
+
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/testmdx`,
+      },
+    },
+
+    //
+
     {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
+        //
+        defaultLayouts: {
+          default: path.resolve("./src/templates/test.template.tsx"),
+        },
+        //
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-images",
@@ -62,6 +80,16 @@ module.exports = {
         ],
       },
     },
+
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -71,8 +99,8 @@ module.exports = {
         background_color: "#25313c",
         theme_color: "#f4d35e",
         display: "minimal-ui",
-        icon: "./src/data/images/favicon.png"
-      }
-    }
+        icon: "./src/data/images/favicon.png",
+      },
+    },
   ],
 }
