@@ -7,6 +7,8 @@ import Img from "gatsby-image"
 import Layout from "../components/layout.component"
 import SEO from "../components/seo.component";
 
+import Header from "../components/header.component"
+
 import { ProjectPageQuery } from "../../custom-typings/graphql-typings"
 
 interface CurrentProjectTemplateProps {

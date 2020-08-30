@@ -40,7 +40,7 @@ exports.createPages = async ({ actions, graphql }) => {
     }
     if (node.frontmatter.type === "current") {
       createPage({
-        path: `current/`,
+        path: `current/${node.slug}`,
         component: currentProjectTemplate,
         context: {
           slug: node.slug,

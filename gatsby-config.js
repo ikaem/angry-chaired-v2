@@ -14,6 +14,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "pages",
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "assets",
         path: `${__dirname}/src/data`,
       },
@@ -71,8 +78,8 @@ module.exports = {
         background_color: "#25313c",
         theme_color: "#f4d35e",
         display: "minimal-ui",
-        icon: "./src/data/images/favicon.png"
-      }
-    }
+        icon: "./src/data/images/favicon.png",
+      },
+    },
   ],
 }
