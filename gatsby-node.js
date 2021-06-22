@@ -11,9 +11,10 @@ exports.createPages = async ({ actions, graphql }) => {
 
   const result = await graphql(`
     query AllMDX {
-      allMdx(filter: { 
-        frontmatter: { published: { eq: true }}
-      }) {
+      allMdx(
+        sort: { order: DESC, fields: frontmatter___date }
+        filter: { frontmatter: { published: { eq: true }}}
+      ) {
         edges {
           node {
             slug

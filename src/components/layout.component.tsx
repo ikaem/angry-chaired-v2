@@ -94,6 +94,10 @@ img {
   border-radius: var(--barelyARadius);
 }
 
+a {
+  color: var(--yellow);
+}
+
 input,
 textarea,
 button {

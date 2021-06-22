@@ -38,8 +38,8 @@ const CurrentProjectTemplate: React.FC<CurrentProjectTemplateProps> = ({
         />
 
         <div className="current-project-article_project-details">
-          <h2 className="project-details_title">GraphQL w. JWT</h2>
-          <span className="project-details_date">20/08/2020</span>
+          <h2 className="project-details_title">{title}</h2>
+          <span className="project-details_date">{date}</span>
 
           <div className="project-details_remark-insert">
             <MDXRenderer>{body}</MDXRenderer>

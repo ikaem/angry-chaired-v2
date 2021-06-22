@@ -10,11 +10,15 @@ interface ProjectBriefProps {
   featuredImage?: any
 }
 
-const ProjectBrief: React.FC<ProjectBriefProps> = ({ title, date, slug, featuredImage }) => {
+const ProjectBrief: React.FC<ProjectBriefProps> = ({
+  title,
+  date,
+  slug,
+  featuredImage,
+}) => {
   return (
     <ProjectBriefStyled className="projects-list-section_project">
       <Link to={`project/${slug}`}>
-
         <Img
           className="project_image-container"
           fluid={featuredImage}
@@ -31,6 +35,15 @@ const ProjectBrief: React.FC<ProjectBriefProps> = ({ title, date, slug, featured
 export default ProjectBrief
 
 const ProjectBriefStyled = styled.article`
+  height: 100%;
+
+  > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   .project_image-container {
     width: 100%;
     height: 100%;

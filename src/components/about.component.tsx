@@ -20,32 +20,28 @@ const About: React.FC<AboutProps> = ({ myAboutImage }) => {
 
         <div className="about-me-section_info">
           <h4 className="info_brief">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            My name is Karlo, and I work to be a web developer
           </h4>
           <p className="info_long">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae, magnam eaque. Quaerat maxime id blanditiis? Adipisci
-            sed itaque, deleniti nulla voluptatum iste a, ad, sit libero nihil
-            soluta ipsam quaerat?
+            I am focused on frontend, and mostly work in React. I can find my way around Node, PSQL and MongoDB, too. I enjoy designing shape of websites in Figma, try to code in TypeScript as much as possible, and generally stay in touch with anything related to the world of web development.
           </p>
           <h4 className="info_brief">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            I don't have professional experience in web development - yet 
           </h4>
           <p className="info_long">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae, magnam eaque. Quaerat maxime id blanditiis? Adipisci
-            sed itaque, deleniti nulla voluptatum iste a, ad, sit libero nihil
-            soluta ipsam quaerat?
+            I am learning though, and hope to find a job where I can experience team work and improve my skills. For now, I throw myself at bunch of smaller projects, and I write a <a href="https://ikaem.github.io/angry-chaired-blog/" target="_blank">blog</a> to keep track of it all. 
           </p>
           <h4 className="info_brief">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            accusamus similique error laboriosam commodi.
+            I can work with you
           </h4>
           <p className="info_long">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae, magnam eaque. Quaerat maxime id blanditiis? Adipisci
-            sed itaque, deleniti nulla voluptatum iste a, ad, sit libero nihil
-            soluta ipsam quaerat?
+            Do you need help with your website? Or maybe you just want to see what I am up to? Contact me.
+          </p>
+          <h4 className="info_brief">
+            Why "Angry Chaired"?
+          </h4>
+          <p className="info_long">
+            Because of one of the <a href="https://www.youtube.com/watch?v=IpEXM1Yziws" target="_blank">greatest songs</a> by one of the <a href="https://aliceinchains.com/" target="_blank">greatest bands</a>.
           </p>
         </div>
       </aside>

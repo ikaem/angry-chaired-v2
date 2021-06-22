@@ -5,7 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout.component"
-import SEO from "../components/seo.component";
+import SEO from "../components/seo.component"
 
 import { ProjectPageQuery } from "../../custom-typings/graphql-typings"
 
@@ -18,14 +18,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({ data }) => {
     body,
     excerpt,
     frontmatter: { date, title, featured },
-  } = data.mdx 
+  } = data.mdx
 
   return (
     <Layout>
-      <SEO 
-        pageTitle={title}
-        pageDescription={excerpt}
-      />
+      <SEO pageTitle={title} pageDescription={excerpt} />
       <ProjectTemplateStyled className="main-content_project-article">
         <Img
           className="project-article_image-container"
@@ -64,7 +61,6 @@ export const query = graphql`
           }
         }
       }
-      
     }
   }
 `
@@ -75,13 +71,19 @@ const ProjectTemplateStyled = styled.article`
   display: flex;
   flex-direction: column;
 
+  a {
+    color: var(--red);
+
+    :hover {
+      text-decoration: underline;
+    }
+  }
+
   .project-article_image-container {
     width: 100%;
     height: 60vw;
     max-height: 328px;
     margin-bottom: 1rem;
-
-
   }
 
   .project-article_project-details {
@@ -103,6 +105,7 @@ const ProjectTemplateStyled = styled.article`
 
     .project-details_remark-insert {
       /*  */
+
       > p {
         font-size: 1rem;
         line-height: 150%;

@@ -18,40 +18,40 @@ const Footer: React.FC = () => {
           <Link to="/">
             <h5 className="site-info_logo">Angry Chaired</h5>
           </Link>
-          <a href="mailto:kaem@tutanota.com" className="site-info_email">
+          <a href="mailto:kaem@tutanota.com" className="site-info_email" target="_blank">
             ikaem@tutanota.com
           </a>
           <ul className="site-info_social-contacts">
             <li className="site-info__social-contact">
-              <a href="" className="social-contact_link">
+              <a href="https://www.linkedin.com/in/karlomarinovic/" className="social-contact_link" target="_blank">
                 <LinkedInSocial />
               </a>
             </li>
             <li className="site-info__social-contact">
-              <a href="" className="social-contact_link">
+              <a href="https://github.com/ikaem" className="social-contact_link" target="_blank">
                 <GithubSocial />
               </a>
             </li>
           </ul>
           <p className="site-info_background-credit">
-            <a href="https://fontawesome.com/icons/linkedin?style=brands">
+            <a href="https://fontawesome.com/icons/linkedin?style=brands" target="_blank">
               LinkedIn
             </a>{" "}
             &amp;{" "}
-            <a href="https://fontawesome.com/icons/github-square?style=brands">
+            <a href="https://fontawesome.com/icons/github-square?style=brands" target="_blank">
               Github
             </a>{" "}
             icons
             <br />
-            courtesy of <a href="https://fontawesome.com/">Font Awesome</a>,
+            courtesy of <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>,
             <br />
             used in accordance with their{" "}
-            <a href="https://fontawesome.com/license">license</a>.
+            <a href="https://fontawesome.com/license" target="_blank">license</a>.
             <br />
             <br />
             Cool background pattern <br />
             courtesy of{" "}
-            <a href="https://svgbackgrounds.com/">SVGBackgrounds.com</a>.
+            <a href="https://svgbackgrounds.com/" target="_blank">SVGBackgrounds.com</a>.
           </p>
         </section>
       </div>
