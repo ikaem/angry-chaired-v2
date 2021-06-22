@@ -20,28 +20,51 @@ const About: React.FC<AboutProps> = ({ myAboutImage }) => {
 
         <div className="about-me-section_info">
           <h4 className="info_brief">
-            My name is Karlo, and I work to be a web developer
+            My name is Karlo, and I am a web developer
           </h4>
           <p className="info_long">
-            I am focused on frontend, and mostly work in React. I can find my way around Node, PSQL and MongoDB, too. I enjoy designing shape of websites in Figma, try to code in TypeScript as much as possible, and generally stay in touch with anything related to the world of web development.
+            I am focused on frontend, and mostly work in React. I can also work
+            with Node, Express, PSQL and MongoDB. I enjoy designing shape of
+            websites in Figma, try to code in TypeScript as much as possible,
+            and generally stay in touch with anything related to the world of
+            web development. I have recently started learning Go, and decided to
+            give Angular another shot, too.
           </p>
           <h4 className="info_brief">
-            I don't have professional experience in web development - yet 
+            I am on my way to have a full year of professional experience in web
+            development.
           </h4>
           <p className="info_long">
-            I am learning though, and hope to find a job where I can experience team work and improve my skills. For now, I throw myself at bunch of smaller projects, and I write a <a href="https://ikaem.github.io/angry-chaired-blog/" target="_blank">blog</a> to keep track of it all. 
+            I am still learning though, and work hard to improve my web
+            development skills. I throw myself at bunch of smaller projects, and
+            I write a{" "}
+            <a
+              href="https://ikaem.github.io/angry-chaired-blog/"
+              target="_blank"
+            >
+              blog
+            </a>{" "}
+            to keep track of it all.
           </p>
-          <h4 className="info_brief">
-            I can work with you
-          </h4>
+          <h4 className="info_brief">I can work with you</h4>
           <p className="info_long">
-            Do you need help with your website? Or maybe you just want to see what I am up to? Contact me.
+            Do you need help with your website? Or maybe you just want to see
+            what I am up to? Contact me.
           </p>
-          <h4 className="info_brief">
-            Why "Angry Chaired"?
-          </h4>
+          <h4 className="info_brief">Why "Angry Chaired"?</h4>
           <p className="info_long">
-            Because of one of the <a href="https://www.youtube.com/watch?v=IpEXM1Yziws" target="_blank">greatest songs</a> by one of the <a href="https://aliceinchains.com/" target="_blank">greatest bands</a>.
+            Because of one of the{" "}
+            <a
+              href="https://www.youtube.com/watch?v=IpEXM1Yziws"
+              target="_blank"
+            >
+              greatest songs
+            </a>{" "}
+            by one of the{" "}
+            <a href="https://aliceinchains.com/" target="_blank">
+              greatest bands
+            </a>
+            .
           </p>
         </div>
       </aside>
