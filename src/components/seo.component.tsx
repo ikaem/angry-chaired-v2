@@ -11,14 +11,14 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({ pageTitle, pageDescription }) => {
   const { title, author, description } = useSiteMetadata()
 
-  console.log(title);
+  console.log(title)
 
   return (
     <Helmet
       htmlAttributes={{
         lang: "en",
       }}
-      title={pageTitle || "Portfolio" }
+      title={pageTitle || "Bog za kompjutere i elektrotehniku"}
       titleTemplate={`${title} | %s`}
       meta={[
         { name: "author", content: author },
